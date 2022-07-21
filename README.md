@@ -1,2 +1,2 @@
 # Website made with HTML, CSS and JS
-![Изображение сайта](https://user-images.githubusercontent.com/105944007/180063310-c3b7b558-df4c-4078-af19-487b1ecbaa59.jpg)
+![Page](https://user-images.githubusercontent.com/105944007/180209168-51bc20c2-b42c-4b4f-b37b-ef9db7cd8be1.jpg)
