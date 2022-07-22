@@ -32,7 +32,8 @@ hr {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -303,17 +304,17 @@ hr {
 /* CARD */
 
 .card {
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card__imgs {
-    width: 100%;
-    max-width: 380px;
-    height: 100%;
+    max-width: 100%;
+    width: 380px;
+    height: auto;
     max-height: 200px;
-    min-height: 200px;
 }
 
 .card__imgss {
@@ -326,7 +327,8 @@ hr {
 }
 
 .card__item {
-    width: 380px;
+    width: 33.33333%;
+    padding: 0 15px;
 
 }
 
@@ -355,6 +357,7 @@ hr {
 
 .card__img img {
     display: block;
+
     transition: opacity 0.1s linear;
 }
 
@@ -406,6 +409,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat__item {
@@ -439,16 +443,20 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services__item {
-    flex: 1 1 0;
-
-    padding-left: 85px;
-    padding-right: 35px;
+    width: 33.33333%;
+    margin-bottom: 40px;
+    padding: 0 35px 40px 85px;
 
     position: relative;
 
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -481,24 +489,28 @@ hr {
 
 .devices__item {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* SERVICE */
 
 .wedo {
     display: flex;
-
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
 }
 
 .wedo__img {
-    width: 100%;
-    max-width: 570px;
-    height: 100%;
+    display: block;
+    max-width: 100%;
+    width: 570px;
+    height: auto;
     max-height: 380px;
 }
 
@@ -1177,4 +1189,216 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+                    /* MEDIA 1230PX */
+
+@media (max-width: 1230px) {
+
+    /* INTRO */
+
+    .intro__suptitle {
+        font-size: 52px;
+    }
+
+    .intro__title {
+        font-size: 120px;
+    }
+
+    /* CARD */
+
+    .card__imgs {
+        min-height: 200px;
+    }
+
+}
+
+                    /* MEDIA 990PX */
+
+@media (max-width: 990px) {
+
+    /* INTRO */
+
+    .intro__suptitle {
+        font-size: 32px;
+    }
+
+    .intro__title {
+        font-size: 80px;
+    }
+
+    /* STATISTICS */
+
+    .stat {
+        justify-content: center;
+    }
+
+    .stat__item {
+        flex: none;
+        width: 33.33333;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        border: 0;
+    }
+
+    .stat__item:last-child {
+        border-right: 0;
+    }
+
+    /* SERVICES */
+
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services__item--border {
+        border-bottom: 0;
+    }
+
+}
+
+                    /* MEDIA 770PX */
+
+@media (max-width: 770px) {
+
+    /* NAV */
+
+    .nav {
+        display: none;
+    }
+
+    /* SECTION */
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+    /* SLIDER */
+    
+    .slider__text {
+        display: none;
+    }
+
+    .slider__item.active:before {
+        width: 50%;
+    }
+
+    /* CARD */
+
+    .card {
+        justify-content: center;
+
+        margin-top: 0px;
+    }
+
+    .card__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .card__item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* SERVICES */
+
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+         width: 100%;
+         max-width: 400px;
+         padding: 0 0 40px 75px;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+        /* DEVICES */
+
+        .devices {
+            max-width: 520px;
+        }
+
+    /* WEDO */
+
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
+    }
+ 
+}
+
+                    /* MEDIA 575PX */
+
+@media (max-width: 575px) {
+
+    /* INTRO */
+
+    .intro__suptitle {
+        font-size: 22px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+     /* SECTION */
+
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__suptitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+
+    /* CARD */
+
+    .card {
+        margin-top: 0px;
+    }
+
+    /* STATISTICS */
+
+    .stat__item {
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .stat__item:last-child {
+        border-bottom: 0;
+    }
+
+    .stat__count {
+        font-size: 52px;
+    }
+
+    /* DEVICES */
+
+    .devices {
+        max-width: 320px;
+    }
+
 }
